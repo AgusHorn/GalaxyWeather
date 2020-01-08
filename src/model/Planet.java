@@ -32,9 +32,14 @@ public class Planet {
 		double positionInGrades = this.getPositionInGrades(dayNumber);
 		double positionInRadians = Math.toRadians(positionInGrades);
 		
-		double tempX = this.distance * Math.cos(positionInRadians);
-		double tempY = this.distance * Math.sin(positionInRadians);
+		double tempX = this.distance * Math.sin(positionInRadians);
+		double tempY = this.distance * Math.cos(positionInRadians);
+		
+		System.out.println(tempX);
+		System.out.println(tempY);
 		
 		return new Position(tempX, tempY);
 	}
+	
+	//TODO: PERIMETER
 }

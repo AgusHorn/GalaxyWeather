@@ -18,11 +18,20 @@ public class Utils {
 		return false;
 	}
 	
+	public static boolean isSunInTriangle(Position posOne, Position posTwo, Position posThree) {
+		Position sunPosition = new Position(0,0);
+		Triangle planetTriangle = new Triangle(posOne, posTwo, posThree);
+		
+		return planetTriangle.isPointInside(sunPosition);
+	}
+	
 	private static boolean areTwoPlanetsInLine(double gradesPlanetOne, double gradesPlanetTwo) {
 		if ((gradesPlanetOne - gradesPlanetTwo == 180) || (gradesPlanetOne - gradesPlanetTwo == -180)) {
 			return true;
 		}
 		return false;
 	}
+	
+	//TODO: MAX PERMIETER?
 
 }
