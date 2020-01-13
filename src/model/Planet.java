@@ -35,9 +35,6 @@ public class Planet {
 		double tempX = this.distance * Math.sin(positionInRadians);
 		double tempY = this.distance * Math.cos(positionInRadians);
 		
-		System.out.println(tempX);
-		System.out.println(tempY);
-		
 		return new Position(tempX, tempY);
 	}
 	

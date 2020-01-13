@@ -18,11 +18,24 @@ public class Utils {
 		return false;
 	}
 	
+	public static boolean arePlanetsInLine(Planet planetOne, Planet planetTwo, Planet planetThree, int dayNumber) {
+		Triangle planetTriangle = new Triangle(planetOne.getPosition(dayNumber), planetTwo.getPosition(dayNumber), planetThree.getPosition(dayNumber));
+		
+		return (planetTriangle.getArea() == 0.0);
+	}
+	
 	public static boolean isSunInTriangle(Position posOne, Position posTwo, Position posThree) {
 		Position sunPosition = new Position(0,0);
 		Triangle planetTriangle = new Triangle(posOne, posTwo, posThree);
 		
 		return planetTriangle.isPointInside(sunPosition);
+	}
+	
+	public static double round(double value) {
+	    long factor = (long) Math.pow(10, 5);
+	    value = value * factor;
+	    long tmp = Math.round(value);
+	    return (double) tmp / factor;
 	}
 	
 	private static boolean areTwoPlanetsInLine(double gradesPlanetOne, double gradesPlanetTwo) {

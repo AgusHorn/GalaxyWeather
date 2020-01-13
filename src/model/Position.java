@@ -6,8 +6,8 @@ public class Position {
 	double radians;
 	
 	public Position(double x, double y) {
-		this.x = x;
-		this.y = y;
+		this.x = Utils.round(x);
+		this.y = Utils.round(y);
 	}
 	
 	public double getX() {

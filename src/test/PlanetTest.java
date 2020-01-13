@@ -70,11 +70,11 @@ class PlanetTest {
 		vulcanoPos = this.vulcano.getPosition(18);
 		
 		assertEquals(ferengiOtherPos.getX(), ferengiPos.getX());
-		assertEquals(ferengiOtherPos.getY(), Math.round(ferengiPos.getY()));
+		assertEquals(ferengiOtherPos.getY(), ferengiPos.getY());
 		assertEquals(betasoideOtherPos.getX(), betasoidePos.getX());
-		assertEquals(betasoideOtherPos.getY(), Math.round(betasoidePos.getY()));
+		assertEquals(betasoideOtherPos.getY(), betasoidePos.getY());
 		assertEquals(vulcanoOtherPos.getX(), vulcanoPos.getX());
-		assertEquals(vulcanoOtherPos.getY(), Math.round(vulcanoPos.getY()));
+		assertEquals(vulcanoOtherPos.getY(), vulcanoPos.getY());
 	}
 
 }
