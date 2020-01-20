@@ -1,5 +1,7 @@
 package model;
 
+import utils.Utils;
+
 public class GalaxyWeather {
 	
 	public static void main(String args[]) {

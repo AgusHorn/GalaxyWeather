@@ -1,4 +1,8 @@
-package model;
+package utils;
+
+import model.Planet;
+import model.Position;
+import model.Triangle;
 
 public class Utils {
 	
@@ -31,18 +35,24 @@ public class Utils {
 		return planetTriangle.isPointInside(sunPosition);
 	}
 	
-	public static double round(double value) {
-	    long factor = (long) Math.pow(10, 5);
-	    value = value * factor;
-	    long tmp = Math.round(value);
-	    return (double) tmp / factor;
+	public static boolean getTrianglePerimeter(Position posOne, Position posTwo, Position posThree) {
+		Triangle planetTriangle = new Triangle(posOne, posTwo, posThree);
+		
+		return false;
 	}
-	
+		
 	private static boolean areTwoPlanetsInLine(double gradesPlanetOne, double gradesPlanetTwo) {
 		if ((gradesPlanetOne - gradesPlanetTwo == 180) || (gradesPlanetOne - gradesPlanetTwo == -180)) {
 			return true;
 		}
 		return false;
+	}
+	
+	public static double round(double value) {
+	    long factor = (long) Math.pow(10, 5);
+	    value = value * factor;
+	    long tmp = Math.round(value);
+	    return (double) tmp / factor;
 	}
 	
 	//TODO: MAX PERMIETER?

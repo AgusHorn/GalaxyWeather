@@ -1,5 +1,7 @@
 package model;
 
+import utils.Utils;
+
 public class Position {
 	double x;
 	double y;

@@ -37,6 +37,4 @@ public class Planet {
 		
 		return new Position(tempX, tempY);
 	}
-	
-	//TODO: PERIMETER
 }
