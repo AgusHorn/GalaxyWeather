@@ -9,14 +9,11 @@ A continuación el diagrama del sistema solar.
 
 Premisas:
 
-	● El planeta Ferengi se desplaza con una velocidad angular de 1 grados/día en sentido
-horario. Su distancia con respecto al sol es de 500Km.
+	● El planeta Ferengi se desplaza con una velocidad angular de 1 grados/día en sentido horario. Su distancia con respecto al sol es de 500Km.
 
-	● El planeta Betasoide se desplaza con una velocidad angular de 3 grados/día en sentido
-horario. Su distancia con respecto al sol es de 2000Km.
+	● El planeta Betasoide se desplaza con una velocidad angular de 3 grados/día en sentido horario. Su distancia con respecto al sol es de 2000Km.
 
-	● El planeta Vulcano se desplaza con una velocidad angular de 5 grados/día en sentido
-anti­horario, su distancia con respecto al sol es de 1000Km.
+	● El planeta Vulcano se desplaza con una velocidad angular de 5 grados/día en sentido anti­horario, su distancia con respecto al sol es de 1000Km.
 
 	● Todas las órbitas son circulares.
 
@@ -73,20 +70,20 @@ Se optó por realizar una aplicación Java para el programa informático, el cua
 
 ## Funcionamiento
 
-Para hacer funcionar el programa (JavaApplication), importar el proyecto a un IDE o correrlo con la terminal.
+Para hacer funcionar el programa (JavaApplication), importar el proyecto a un IDE o correrlo con la terminal compilando con el comando 'javac' y luego corriendo con 'java'.
 
 
 ## Respuestas a las preguntas
 
 Realizar un programa informático para poder predecir en los próximos 10 años:
-1. ¿Cuántos períodos de sequía habrá?
-	Cantidad de días de Sequía 21
+> 1. ¿Cuántos períodos de sequía habrá?
+_Cantidad de días de Sequía 21_
 
-2. ¿Cuántos períodos de lluvia habrá y qué día será el pico máximo de lluvia?
-	Cantidad de días de Lluvia 806 y de pico máximo de lluvia 40
+> 2. ¿Cuántos períodos de lluvia habrá y qué día será el pico máximo de lluvia?
+_Cantidad de días de Lluvia 806 y de pico máximo de lluvia 40_
 
-3. ¿Cuántos períodos de condiciones óptimas de presión y temperatura habrá?
-	Cantidad de días de Optimas Condiciones 20
+> 3. ¿Cuántos períodos de condiciones óptimas de presión y temperatura habrá?
+_Cantidad de días de Optimas Condiciones 20_
 
 Se puede apreciar cada uno de los días con su respectivo clima en la consola tanto del IDE o la terminal una vez ejecutado el programa.
 
