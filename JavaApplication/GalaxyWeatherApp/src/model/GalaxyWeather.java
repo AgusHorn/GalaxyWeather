@@ -9,8 +9,8 @@ import utils.Utils;
 
 public class GalaxyWeather {
 	
-	private static int DAYS_IN_YEAR = 360;
-	private static int YEARS_TO_PREDICT = 1;
+	private static int DAYS_IN_YEAR = 365;
+	private static int YEARS_TO_PREDICT = 10;
 	
 	private List<String> forecasts;
 	
@@ -29,6 +29,7 @@ public class GalaxyWeather {
 		List<Forecast> droughtDays = forecasts.stream()
 							 		.filter(byDrought)
 					  				.collect(Collectors.toList());
+		System.out.printf("Cantidad de días de Sequía %s\n", droughtDays.size());
 		System.out.println(droughtDays);
 		System.out.println("");
 	}
@@ -39,6 +40,7 @@ public class GalaxyWeather {
 		List<Forecast> optimumCondDays = forecasts.stream()
 							 		.filter(byOptimumCond)
 					  				.collect(Collectors.toList());
+		System.out.printf("Cantidad de días de Optimas Condiciones %s\n", optimumCondDays.size());
 		System.out.println(optimumCondDays);
 		System.out.println("");
 	}
@@ -56,7 +58,16 @@ public class GalaxyWeather {
 				forecast.setWeather(ForecastType.MAX_RAINY);
 			}
 		}
+		System.out.printf("Cantidad de días de Lluvia %s\n", rainyDays.size());
 		System.out.println(rainyDays);
+		
+		Predicate<Forecast> maxRainy = forecast -> forecast.getWeather() == ForecastType.MAX_RAINY;
+		List<Forecast> maxRainyDays = rainyDays.stream()
+							 		.filter(maxRainy)
+					  				.collect(Collectors.toList());
+		System.out.printf("Cantidad de días de MaxLluvia %s\n", maxRainyDays.size());
+		System.out.println(maxRainyDays);
+		
 		System.out.println("");
 		
 	}

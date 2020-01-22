@@ -1,7 +1,7 @@
 # GalaxyWeather
 Respuesta al ejercicio de predicción del clima de tres civilizaciones: Vulcanos, Ferengis y Betasoides
 
-#Enunciado
+## Enunciado
 En una galaxia lejana, existen tres civilizaciones. Vulcanos, Ferengis y Betasoides. Cada
 civilización vive en paz en su respectivo planeta.
 Dominan la predicción del clima mediante un complejo sistema informático.
@@ -11,10 +11,13 @@ Premisas:
 
 	● El planeta Ferengi se desplaza con una velocidad angular de 1 grados/día en sentido
 horario. Su distancia con respecto al sol es de 500Km.
+
 	● El planeta Betasoide se desplaza con una velocidad angular de 3 grados/día en sentido
 horario. Su distancia con respecto al sol es de 2000Km.
+
 	● El planeta Vulcano se desplaza con una velocidad angular de 5 grados/día en sentido
 anti­horario, su distancia con respecto al sol es de 1000Km.
+
 	● Todas las órbitas son circulares.
 
 Cuando los tres planetas están alineados entre sí y a su vez alineados con respecto al sol, el
@@ -47,15 +50,44 @@ consultado.
 Cloudfoudry) y enviar la URL para consulta:
 Ej: GET → http://….../clima?dia=566 → Respuesta: {“dia”:566, “clima”:”lluvia”}
 
-#Aclaraciones
+## Aclaraciones
 
 Se optó por realizar una aplicación Java para el programa informático, el cual se encuentra en la carpeta JavaApplication. Mientras que para el Bonus se utilizó un proyecto Spring y se encuentra en la carpeta Bonus.
 
-#Tecnologías
+## Tecnologías
+
+- Java Spring
+- JUnit 5
+
+## Suposiciones
+	- El primer día es el día 0.
+	- No existen años biciestos. Todos los años tienen 365 días.
+	- Los planetas son un punto en el espacio. Se despreció el radio/diámetro que puedan tener éstos. Así mismo ocurrió con el Sol.
+	- El punto de inicio de los planetas es el eje Y (en un plano cartesiano sus coordenadas de inicio serían (0, distancia al sol)).
+	- El código está en inglés. Por lo que los climas de los días son:
+		- RAINY
+		- MAX_RAINY
+		- DROUGHT
+		- OPTIMUM_TEMP_AND_PRESSURE
+	- Se asumió que para los días en los cuales no se cumplen las condiciones del enunciado, no hay información suficiente para determinarlos por lo que su clima es: UNKNOWN.
+
+## Funcionamiento
+
+Para hacer funcionar el programa (JavaApplication), importar el proyecto a un IDE o correrlo con la terminal.
 
 
-#Suposiciones
+## Respuestas a las preguntas
 
+Realizar un programa informático para poder predecir en los próximos 10 años:
+1. ¿Cuántos períodos de sequía habrá?
+	Cantidad de días de Sequía 21
 
-#Funcionamiento
+2. ¿Cuántos períodos de lluvia habrá y qué día será el pico máximo de lluvia?
+	Cantidad de días de Lluvia 806 y de pico máximo de lluvia 40
+
+3. ¿Cuántos períodos de condiciones óptimas de presión y temperatura habrá?
+	Cantidad de días de Optimas Condiciones 20
+
+Se puede apreciar cada uno de los días con su respectivo clima en la consola tanto del IDE o la terminal una vez ejecutado el programa.
+
 
