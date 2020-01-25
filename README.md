@@ -53,7 +53,9 @@ Se optó por realizar una aplicación Java para el programa informático, el cua
 
 ## Tecnologías
 
-- Java Spring
+- Java
+- Spring
+- Hibernate
 - JUnit 5
 
 ## Suposiciones
@@ -70,7 +72,34 @@ Se optó por realizar una aplicación Java para el programa informático, el cua
 
 ## Funcionamiento
 
-Para hacer funcionar el programa (JavaApplication), importar el proyecto a un IDE o correrlo con la terminal compilando con el comando 'javac' y luego corriendo con 'java'.
+Para hacer funcionar el programa (JavaApplication), importar el proyecto a un IDE o correrlo con la terminal compilando con el comando 'javac' y luego corriendo con 'java'. 
+
+Para ver el funcionamiento del Bonus, ver la sección [API](https://github.com/AgusHorn/GalaxyWeather#api)
+
+## API
+
+Para el Bonus, se creó la siguiente API:
+
+1. Para saber el clima de un día específico tenemos:
+
+https://galaxy-weather-meli.herokuapp.com/clima?dia=0
+
+En vez de un 0, se le puede pasar cualquier día desde el 0 hasta 3649.
+
+2. Para saber los días con cierto clima:
+
+https://galaxy-weather-meli.herokuapp.com/clima/weather?weather=DROUGHT
+
+El último parámetro pasado puede ser cualquiera de los siguintes valores:
+	- DROUGHT
+	- RAINY
+	- MAXIMUM_RAINY
+	- OPTIMUM_TEMP_AND_PRESSURE
+	- UNKNOWN
+
+3. Para saber todos los días con sus respectivos climas:
+
+https://galaxy-weather-meli.herokuapp.com/clima/allDays
 
 
 ## Respuestas a las preguntas
