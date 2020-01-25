@@ -82,36 +82,36 @@ Para el Bonus, se creó la siguiente API:
 
 1. Para saber el clima de un día específico tenemos:
 
-https://galaxy-weather-meli.herokuapp.com/clima?dia=0
+	https://galaxy-weather-meli.herokuapp.com/clima?dia=0
 
-En vez de un 0, se le puede pasar cualquier día desde el 0 hasta 3649.
+	En vez de un 0, se le puede pasar cualquier día desde el 0 hasta 3649.
 
 2. Para saber los días con cierto clima:
 
-https://galaxy-weather-meli.herokuapp.com/clima/weather?weather=DROUGHT
+	https://galaxy-weather-meli.herokuapp.com/clima/weather?weather=DROUGHT
 
-El último parámetro pasado puede ser cualquiera de los siguintes valores:
-	- DROUGHT
-	- RAINY
-	- MAXIMUM_RAINY
-	- OPTIMUM_TEMP_AND_PRESSURE
-	- UNKNOWN
+	El último parámetro pasado puede ser cualquiera de los siguintes valores:  
+		- DROUGHT  
+		- RAINY  
+		- MAXIMUM_RAINY  
+		- OPTIMUM_TEMP_AND_PRESSURE  
+		- UNKNOWN  
 
 3. Para saber todos los días con sus respectivos climas:
 
-https://galaxy-weather-meli.herokuapp.com/clima/allDays
+	https://galaxy-weather-meli.herokuapp.com/clima/allDays
 
 
 ## Respuestas a las preguntas
 
 Realizar un programa informático para poder predecir en los próximos 10 años:
-> 1. ¿Cuántos períodos de sequía habrá?
+> 1. ¿Cuántos períodos de sequía habrá?  
 _Cantidad de días de Sequía 21_
 
-> 2. ¿Cuántos períodos de lluvia habrá y qué día será el pico máximo de lluvia?
+> 2. ¿Cuántos períodos de lluvia habrá y qué día será el pico máximo de lluvia?  
 _Cantidad de días de Lluvia 806 y de pico máximo de lluvia 40_
 
-> 3. ¿Cuántos períodos de condiciones óptimas de presión y temperatura habrá?
+> 3. ¿Cuántos períodos de condiciones óptimas de presión y temperatura habrá?  
 _Cantidad de días de Optimas Condiciones 20_
 
 Se puede apreciar cada uno de los días con su respectivo clima en la consola tanto del IDE o la terminal una vez ejecutado el programa.
