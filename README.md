@@ -80,13 +80,13 @@ Para ver el funcionamiento del Bonus, ver la sección [API](https://github.com/A
 
 Para el Bonus, se creó la siguiente API:
 
-1. Para saber el *clima de un día específico* tenemos:
+1. Para saber el **clima de un día específico** tenemos:
 
 	https://galaxy-weather-meli.herokuapp.com/clima?dia=0
 
 	En vez de un 0, se le puede pasar cualquier día desde el 0 hasta 3649.
 
-2. Para saber los *días con cierto clima*:
+2. Para saber los **días con cierto clima**:
 
 	https://galaxy-weather-meli.herokuapp.com/clima/weather?weather=DROUGHT
 
@@ -97,7 +97,7 @@ Para el Bonus, se creó la siguiente API:
 		- OPTIMUM_TEMP_AND_PRESSURE  
 		- UNKNOWN  
 
-3. Para saber *todos los días* con sus respectivos climas:
+3. Para saber **todos los días** con sus respectivos climas:
 
 	https://galaxy-weather-meli.herokuapp.com/clima/allDays
 
@@ -106,13 +106,17 @@ Para el Bonus, se creó la siguiente API:
 
 Realizar un programa informático para poder predecir en los próximos 10 años:
 > 1. ¿Cuántos períodos de sequía habrá?  
-*Cantidad de días de Sequía 21*
+
+**Cantidad de días de Sequía 21**
 
 > 2. ¿Cuántos períodos de lluvia habrá y qué día será el pico máximo de lluvia?  
-*Cantidad de días de Lluvia 806 y de pico máximo de lluvia 40*
+
+**Cantidad de días de Lluvia 806 y de pico máximo de lluvia 40**
 
 > 3. ¿Cuántos períodos de condiciones óptimas de presión y temperatura habrá?  
-*Cantidad de días de Optimas Condiciones 20*
+
+**Cantidad de días de Optimas Condiciones 20**
+
 
 Se puede apreciar cada uno de los días con su respectivo clima en la consola tanto del IDE o la terminal una vez ejecutado el programa.
 
